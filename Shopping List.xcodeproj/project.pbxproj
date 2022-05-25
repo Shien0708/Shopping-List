@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		648264BD283C7B47008AAC09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648264BC283C7B47008AAC09 /* AppDelegate.swift */; };
 		648264BF283C7B47008AAC09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648264BE283C7B47008AAC09 /* SceneDelegate.swift */; };
-		648264C1283C7B47008AAC09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648264C0283C7B47008AAC09 /* ViewController.swift */; };
 		648264C4283C7B47008AAC09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648264C2283C7B47008AAC09 /* Main.storyboard */; };
 		648264C6283C7B49008AAC09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 648264C5283C7B49008AAC09 /* Assets.xcassets */; };
 		648264C9283C7B49008AAC09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648264C7283C7B49008AAC09 /* LaunchScreen.storyboard */; };
+		648264D1283C7BDB008AAC09 /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648264D0283C7BDB008AAC09 /* ShoppingListTableViewController.swift */; };
+		648264D5283C7F17008AAC09 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648264D4283C7F17008AAC09 /* Item.swift */; };
+		648264D7283C93EE008AAC09 /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648264D6283C93EE008AAC09 /* ShoppingListTableViewCell.swift */; };
+		648264D9283C9AB6008AAC09 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648264D8283C9AB6008AAC09 /* ItemTableViewController.swift */; };
+		648264DB283C9BB8008AAC09 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648264DA283C9BB8008AAC09 /* ItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		648264B9283C7B47008AAC09 /* Shopping List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		648264BC283C7B47008AAC09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		648264BE283C7B47008AAC09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		648264C0283C7B47008AAC09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		648264C3283C7B47008AAC09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		648264C5283C7B49008AAC09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		648264C8283C7B49008AAC09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		648264CA283C7B49008AAC09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648264D0283C7BDB008AAC09 /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
+		648264D4283C7F17008AAC09 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		648264D6283C93EE008AAC09 /* ShoppingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewCell.swift; sourceTree = "<group>"; };
+		648264D8283C9AB6008AAC09 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
+		648264DA283C9BB8008AAC09 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +66,12 @@
 			children = (
 				648264BC283C7B47008AAC09 /* AppDelegate.swift */,
 				648264BE283C7B47008AAC09 /* SceneDelegate.swift */,
-				648264C0283C7B47008AAC09 /* ViewController.swift */,
 				648264C2283C7B47008AAC09 /* Main.storyboard */,
+				648264D8283C9AB6008AAC09 /* ItemTableViewController.swift */,
+				648264DA283C9BB8008AAC09 /* ItemTableViewCell.swift */,
+				648264D4283C7F17008AAC09 /* Item.swift */,
+				648264D6283C93EE008AAC09 /* ShoppingListTableViewCell.swift */,
+				648264D0283C7BDB008AAC09 /* ShoppingListTableViewController.swift */,
 				648264C5283C7B49008AAC09 /* Assets.xcassets */,
 				648264C7283C7B49008AAC09 /* LaunchScreen.storyboard */,
 				648264CA283C7B49008AAC09 /* Info.plist */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				648264C1283C7B47008AAC09 /* ViewController.swift in Sources */,
+				648264D7283C93EE008AAC09 /* ShoppingListTableViewCell.swift in Sources */,
+				648264DB283C9BB8008AAC09 /* ItemTableViewCell.swift in Sources */,
 				648264BD283C7B47008AAC09 /* AppDelegate.swift in Sources */,
 				648264BF283C7B47008AAC09 /* SceneDelegate.swift in Sources */,
+				648264D5283C7F17008AAC09 /* Item.swift in Sources */,
+				648264D9283C9AB6008AAC09 /* ItemTableViewController.swift in Sources */,
+				648264D1283C7BDB008AAC09 /* ShoppingListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +306,7 @@
 				DEVELOPMENT_TEAM = Z4822F8J4X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Shopping List/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "要求使用相機";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +335,7 @@
 				DEVELOPMENT_TEAM = Z4822F8J4X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Shopping List/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "要求使用相機";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
